@@ -5,7 +5,7 @@ export interface ParcelInput {
   weight: number;
 }
 
-export type ParcelType = "small" | "medium" | "large" | "xl";
+export type ParcelType = "small" | "medium" | "large" | "xl" | "heavy parcel";
 export interface ParcelOutput {
   cost: number;
   name: string;

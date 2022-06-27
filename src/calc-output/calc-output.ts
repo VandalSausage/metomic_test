@@ -5,6 +5,7 @@ const weightLookup: Record<ParcelType, number> = {
   medium: 3,
   large: 6,
   xl: 10,
+  "heavy parcel": 50,
 };
 
 const getWeightCost = (weight: number, type: ParcelType) =>
@@ -28,6 +29,10 @@ const getCost = (
   maxDimension: number,
   weight: number
 ): { cost: number; type: ParcelType } => {
+  if (weight >= 50) {
+    const weightCost = getWeightCost(weight, "heavy parcel");
+    return { cost: weightCost / 2 + 50, type: "heavy parcel" };
+  }
   const { cost: baseCost, type } = getBaseCost(maxDimension);
   const weightCost = getWeightCost(weight, type);
   return { cost: baseCost + weightCost, type };
