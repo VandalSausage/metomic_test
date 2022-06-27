@@ -1,0 +1,22 @@
+{
+  "name": "metomic_test",
+  "version": "1.0.0",
+  "description": "Metomic Tech Test",
+  "main": "index.js",
+  "repository": "https://github.com/VandalSausage/metomic_test.git",
+  "author": "VandalSausage <trumanwright13@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@babel/register": "^7.17.7",
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "csv-parse": "^5.2.0",
+    "csv-writer": "^1.6.0"
+  }
+}
