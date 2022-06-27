@@ -5,7 +5,7 @@ import { ParcelInput } from "../../types";
 export const parseCsv = (): ParcelInput[] => {
   const pathToInput = "input.csv";
   const input: ParcelInput[] = parse(readFileSync(pathToInput), {
-    columns: ["height", "width", "depth"],
+    columns: ["height", "width", "depth", "weight"],
     from_line: 2,
     bom: true,
   });
