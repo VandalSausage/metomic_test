@@ -15,3 +15,6 @@ export interface Output {
   totalCost: number;
   parcels: ParcelOutput[];
 }
+export interface Config {
+  isSpeedy: boolean;
+}
