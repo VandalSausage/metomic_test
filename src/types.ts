@@ -2,6 +2,7 @@ export interface ParcelInput {
   height: number;
   width: number;
   depth: number;
+  weight: number;
 }
 
 export type ParcelType = "small" | "medium" | "large" | "xl";
